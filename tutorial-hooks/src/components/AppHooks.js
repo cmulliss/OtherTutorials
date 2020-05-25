@@ -33,7 +33,7 @@ const AppHooks = () => {
   const handleMouseMove = (event) => {
     setMousePosition({
       x: event.pageX,
-      y: event.pageY
+      y: event.pageY,
     })
   }
 
@@ -62,7 +62,7 @@ const AppHooks = () => {
           height: 50,
           width: 50,
           margin: 30,
-          background: isOn ? 'yellow' : 'grey'
+          background: isOn ? 'yellow' : 'grey',
         }}
         alt='torch'
         onClick={toggleLight}
