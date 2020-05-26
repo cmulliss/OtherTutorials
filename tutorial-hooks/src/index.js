@@ -4,9 +4,11 @@ import * as serviceWorker from './serviceWorker'
 
 import './index.css' //
 
-import App from './components/AppGeolocation'
+// import App from './components/AppGeolocation'
 // import App from './components/AppNoHooks'
 // import App from './components/AppGeolocation'
+// import App from './components/Login'
+import App from './components/Register'
 
 ReactDOM.render(
   <React.StrictMode>
