@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 
+// instead of mutating our form properties, replace entire form object, by creating our intial state outside the component, as a variable, then reference it in useState. Then easily clear our form in handleSubmit with setForm(initialFormState)
+const initialFormState = {
+  username: '',
+  email: '',
+  password: ''
+}
+
 const Register = () => {
-  const [form, setForm] = useState({
-    username: '',
-    email: '',
-    password: ''
-  })
+  const [form, setForm] = useState(initialFormState)
   // create a user piece of state
   const [user, setUser] = useState(null)
 
@@ -22,6 +25,7 @@ const Register = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
     setUser(form)
+    setForm(initialFormState)
   }
 
   return (
